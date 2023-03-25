@@ -6,12 +6,12 @@
   </div>
 </template>
 <script>
-import Kanban from '@/components/Kanban'
+import Kanban from '@/components/Kanban';
 
 export default {
   name: 'DragKanbanDemo',
   components: {
-    Kanban
+    Kanban,
   },
   data() {
     return {
@@ -20,21 +20,21 @@ export default {
         { name: 'Mission', id: 1 },
         { name: 'Mission', id: 2 },
         { name: 'Mission', id: 3 },
-        { name: 'Mission', id: 4 }
+        { name: 'Mission', id: 4 },
       ],
       list2: [
         { name: 'Mission', id: 5 },
         { name: 'Mission', id: 6 },
-        { name: 'Mission', id: 7 }
+        { name: 'Mission', id: 7 },
       ],
       list3: [
         { name: 'Mission', id: 8 },
         { name: 'Mission', id: 9 },
-        { name: 'Mission', id: 10 }
-      ]
-    }
-  }
-}
+        { name: 'Mission', id: 10 },
+      ],
+    };
+  },
+};
 </script>
 <style lang="scss">
 .board {
@@ -48,7 +48,7 @@ export default {
 .kanban {
   &.todo {
     .board-column-header {
-      background: #4A9FF9;
+      background: #4a9ff9;
     }
   }
   &.working {
@@ -63,4 +63,3 @@ export default {
   }
 }
 </style>
-
